@@ -2208,7 +2208,8 @@ class PlayState extends MusicBeatState
 								switch(daNote.noteType) {
 									case 3:
 										//Hurt note, does nothing.
-
+									case 4:
+										//I shat myself
 									default:
 										health -= 0.0475; //For testing purposes
 										songMisses++;
@@ -3208,6 +3209,20 @@ class PlayState extends MusicBeatState
 							note.destroy();
 						}
 					}
+					return;
+				case 4:
+					if(cpuControlled) return;
+
+					var honeyOnScreen = new FlxSprite().makeGraphic(FlxG.width, FlxG.height, FlxColor.YELLOW);
+					honeyOnScreen.alpha = 0.7;
+					honeyOnScreen.cameras = [camHUD];
+					var effect = new FlxWaveEffect(FlxWaveMode.ALL, 10, -1, 4);
+					var honeySprite = new FlxEffectSprite(honeyOnScreen, [effect]);
+					honeySprite.cameras = [camHUD];
+					add(honeySprite);
+					new FlxTimer().start(5, function(timer:FlxTimer) {
+						remove(honeySprite);
+					});
 					return;
 			}
 
