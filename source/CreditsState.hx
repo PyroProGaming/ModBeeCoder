@@ -43,7 +43,10 @@ class CreditsState extends MusicBeatState
 		['Yem',			'yem',		"Made cutscenes",					'https://www.youtube.com/channel/UClWkGQwmA1IqbpVLS8cTQ1g',		0xFFFF0000],
 		['Aries',			'aries',		"Made art",					'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFF008000],
 		['Kev',			'kev',		"Made charts",					'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFFFFFFF],
-		['MarxTalero',			'marx',		'Made art',				'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFC30085]
+		['MarxTalero',			'marx',		'Made art',				'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFC30085],
+		['SpookyNoodle',			'spoopynoodle',		'Composed Week 2',				'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFC30085],
+		['Spelo',			'spelo',		'Coded the mod',				'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFC30085],
+		['teu',			'teu',		'Composed Week 1',				'https://cdn.discordapp.com/attachments/851522736693313536/885569764922122260/unknown.png',		0xFFC30085]
 	];
 
 	var bg:FlxSprite;
